@@ -1,0 +1,312 @@
+
+:root {
+    --primary: #77dcf2;
+    --secondary: #035aa6;
+    --pink: #ff60b0;
+    --dark: #2a2a2a;
+    --light: #fafafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--light);
+    color: var(--dark);
+}
+
+/* NAVBAR */
+
+header {
+    width: 100%;
+    padding: 15px 10%;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 45px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--dark);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #d90479;
+}
+
+
+.hero {
+    min-height: 550px;
+    padding: 70px 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #e0faff, #fff0f8);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.greeting {
+    color: var(--secondary);
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+}
+
+.hero h1 span {
+    color: #d90479;
+}
+
+.hero h3 {
+    font-weight: 500;
+    margin: 10px 0;
+    color: var(--secondary);
+}
+
+.description {
+    line-height: 1.8;
+    margin: 20px 0;
+    color: #555;
+}
+
+.hero-button {
+    display: inline-block;
+    background: var(--secondary);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: var(--pink);
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid white;
+    box-shadow: 0 10px 30px #0002;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 70px 12%;
+    text-align: center;
+}
+
+.about h2,
+.pages h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about > p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    width: 200px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+.info-box i {
+    font-size: 2rem;
+    color: var(--pink);
+}
+
+.info-box h4 {
+    margin: 10px 0 5px;
+}
+
+/* PAGES */
+
+.pages {
+    padding: 70px 12%;
+    text-align: center;
+    background: #eafaff;
+}
+
+.pages > p {
+    color: #666;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.page-card {
+    width: 300px;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 20px;
+    color: var(--dark);
+    box-shadow: 0 5px 20px #00000010;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.page-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px #00000020;
+}
+
+.page-card > i {
+    font-size: 2.5rem;
+    color: var(--secondary);
+}
+
+.page-card h3 {
+    margin: 15px 0 8px;
+}
+
+.page-card p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.page-card span {
+    color: #d90479;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.85rem;
+    margin: 5px;
+    color: #dceefa;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about,
+    .pages {
+        padding: 50px 7%;
+    }
+
+    .about h2,
+    .pages h2 {
+        font-size: 1.6rem;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    .page-card {
+        width: 100%;
+    }
+}

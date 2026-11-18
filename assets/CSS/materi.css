@@ -1,0 +1,370 @@
+
+:root {
+    --primary: #77dcf2;
+    --secondary: #035aa6;
+    --pink: #ff60b0;
+    --dark: #2a2a2a;
+    --light: #fafafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    background: var(--light);
+    color: var(--dark);
+}
+
+/* NAVBAR */
+
+header {
+    width: 100%;
+    padding: 15px 10%;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #d90479;
+}
+
+/* HERO */
+
+.materi-hero {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(120deg, #e0faff, #fff0f8);
+}
+
+.subtitle {
+    color: var(--secondary);
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+}
+
+.materi-hero h1 {
+    font-size: 2.8rem;
+    margin: 10px 0;
+}
+
+.materi-hero p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* MAIN CONTAINER */
+
+.materi-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 35px;
+    padding: 50px 10%;
+    align-items: start;
+}
+
+/* SIDEBAR */
+
+.materi-sidebar {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000010;
+    position: sticky;
+    top: 110px;
+}
+
+.materi-sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.materi-sidebar h3 i {
+    color: var(--secondary);
+    margin-right: 5px;
+}
+
+.materi-sidebar a {
+    display: block;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    color: #555;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.materi-sidebar a:hover {
+    background: #eafaff;
+    color: var(--secondary);
+    transform: translateX(5px);
+}
+
+/* MATERI CONTENT */
+
+.materi-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.materi-card {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #00000010;
+    scroll-margin-top: 100px;
+}
+
+.bab-number {
+    display: inline-block;
+    background: #e0faff;
+    color: var(--secondary);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.materi-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.materi-card > p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* CATATAN */
+
+.materi-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #eafaff;
+    border-left: 4px solid var(--secondary);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.materi-note > i {
+    color: var(--secondary);
+    font-size: 1.5rem;
+}
+
+.materi-note h4 {
+    margin-bottom: 5px;
+    color: var(--secondary);
+}
+
+.materi-note p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.85rem;
+    color: #dceefa;
+    margin: 5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .materi-container {
+        grid-template-columns: 1fr;
+        padding: 35px 5%;
+    }
+
+    .materi-sidebar {
+        position: static;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 0.8rem;
+    }
+
+    .materi-hero {
+        padding: 45px 15px;
+    }
+
+    .materi-hero h1 {
+        font-size: 2rem;
+    }
+
+    .materi-container {
+        padding: 25px 5%;
+    }
+
+    .materi-card {
+        padding: 25px 20px;
+    }
+
+    .materi-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .materi-card > p {
+        font-size: 0.88rem;
+    }
+
+}
+
+
+/* SIDEBAR DROPDOWN */
+
+.materi-sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000010;
+    position: sticky;
+    top: 110px;
+}
+
+.sidebar-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.sidebar-toggle span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-toggle span i {
+    color: var(--secondary);
+}
+
+.sidebar-toggle .arrow {
+    transition: transform 0.3s ease;
+}
+
+/* ISI DROPDOWN */
+
+.sidebar-content {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.sidebar-content a {
+    display: block;
+    padding: 12px 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    color: #555;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar-content a:hover {
+    background: #eafaff;
+    color: var(--secondary);
+    transform: translateX(5px);
+}
+
+/* KONDISI TERTUTUP */
+
+.materi-sidebar.closed .sidebar-content {
+    display: none;
+}
+
+.materi-sidebar.closed .arrow {
+    transform: rotate(-90deg);
+}

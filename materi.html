@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Materi</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="assets/CSS/materi.css">
+
+    <script src="assets/JS/materi.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/IMG/logo.png" alt="Logo">
+            <span>Koesuma</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">Beranda</a>
+            <a href="materi.html"  class="active"><b>Materi</b></a>
+            <a href="portofolio.html">Arsip Tugas</a>
+        </nav>
+        
+    </header>
+
+    <section class="materi-hero">
+
+        <h1 style="color: #035aa6 ;">Materi Pembelajaran</h1>
+
+        <p>
+            Ringkasan dari berbagai materi perkuliahan Komputasi Awan
+        </p>
+
+    </section>
+
+    <!-- PAGE -->
+    <main class="materi-container">
+
+        <!-- DAFTAR ISI -->
+        <aside class="materi-sidebar">
+
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <span>
+                    <i class="bi bi-list-ul"></i>
+                    Daftar Materi
+                </span>
+
+                <i class="bi bi-chevron-down arrow"></i>
+            </button>
+
+            <div class="sidebar-content" id="sidebarContent">
+
+                <a href="#1">1. Pengertian Komputasi Awan</a>
+                <a href="#2">2. Karakteristik dan Ketentuan</a>
+                <a href="#3">3. Jenis Layanan</a>
+                <a href="#4">4. Penerapan Teknologi</a>
+                <a href="#5">5. Keuntungan Penggunaan</a>
+
+            </div>
+
+        </aside>
+
+        <!-- ISI MATERI -->
+        <div class="materi-content">
+
+            <!-- MATERI 1 -->
+            <article class="materi-card" id="1">
+
+                <h2>1. Pengertian Komputasi Awan</h2>
+
+                <p>
+                    Secara mendasar, komputasi awan atau cloud computing merupakan penyediaan sumber daya teknologi informasi secara on-demand melalui jaringan internet 
+                    dengan sistem pembayaran berdasarkan penggunaan (pay-as-you-go). Melalui model ini, pengguna tidak lagi perlu membeli, memiliki, ataupun merawat 
+                    perangkat keras fisik seperti pusat data dan server sendiri. Sebaliknya, berbagai layanan teknologi mulai 
+                    dari daya komputasi, media penyimpanan, hingga basis data dapat diakses sewaktu-waktu dari penyedia layanan awan. 
+                    Infrastruktur dan aplikasi tersebut dikelola secara terpusat, sehingga memungkinkan pekerjaan diselesaikan dari berbagai lokasi dan perangkat yang terhubung dengan internet.
+                </p>
+
+                <p>
+                    Dalam perkembangannya di dunia teknologi informasi, para ahli telah merumuskan berbagai definisi mengenai komputasi awan. Menurut Scale (2009), komputasi awan pada hakikatnya adalah pemanfaatan dan berbagi aplikasi serta 
+                    sumber daya dalam lingkungan jaringan untuk menyelesaikan pekerjaan tanpa harus memikirkan kepemilikan maupun pengelolaan infrastruktur tersebut. Dengan sistem ini, data dan sumber daya komputasi tidak lagi tersimpan secara 
+                    lokal di komputer pribadi pengguna, melainkan di-hosting pada tempat lain agar dapat diakses kapan saja dan di mana saja.
+                </p>
+
+                <p>
+                    Dalam penerapannya di industri, layanan awan umumnya dibagi ke dalam beberapa model penerapan utama. Public cloud memanfaatkan infrastruktur bersama yang dibagi secara logis oleh banyak pelanggan. 
+                    Private cloud dikhususkan bagi satu organisasi tunggal sehingga aspek kontrol 
+                    dan pengelolaannya dapat disesuaikan secara spesifik. Sementara itu, hybrid cloud menggabungkan keunggulan dari lingkungan public dan private cloud secara terpadu.
+                </p>
+
+                <p>
+                    Penerapan komputasi awan kini telah merambah berbagai aspek kegiatan sehari-hari maupun operasional bisnis modern. Contoh penggunaannya meliputi pengelolaan email bisnis, 
+                    penyimpanan dan pencadangan data, pemulihan data pascabencana, pengembangan serta pengujian aplikasi, analisis data skala besar, hingga layanan streaming. 
+                    Selain itu, teknologi awan juga menjadi fondasi utama dalam menopang perkembangan inovasi modern seperti kecerdasan buatan dan pemrosesan bahasa alami.
+                </p>
+
+            </article>
+
+            <!-- MATERI 2 -->
+            <article class="materi-card" id="2">
+
+                <h2>2. Karakteristik dan Ketentuan</h2>
+
+                <p>
+                    <b>1. On-Demand Self-Service</b>
+                    <br>
+                    Pengguna memiliki kebebasan penuh untuk memesan dan mengelola sumber daya teknologi yang dibutuhkan secara mandiri tanpa harus melalui interaksi langsung dengan pihak penyedia layanan. 
+                    Pengadaan maupun konfigurasi layanan terjadi secara otomatis melalui portal web atau antarmuka manajemen. Dari segi ketentuan, sistem ini mewajibkan layanan selalu tersedia bagi pengguna,
+                    di mana mereka cukup berlangganan sesuai kebutuhan dan hanya membayar apa yang mereka pakai saja. Sebagai ilustrasi, ketika penyedia layanan internet menawarkan lima pilihan paket, 
+                    pengguna cukup mengambil satu paket yang diperlukan dan hanya membayar untuk paket tersebut.
+                </p>
+
+                <p>
+                    <b>2. Broad Network Access</b>
+                    <br>
+                    Seluruh kapabilitas komputasi awan dirancang agar dapat diakses secara fleksibel dari berbagai tempat dan waktu melalui jaringan internet dengan standar mekanisme tertentu. Syarat utamanya 
+                    adalah layanan ini wajib mampu dijangkau dan diteruskan ke berbagai macam perangkat keras milik pengguna mulai dari smartphone, laptop, hingga perangakt lainnya selama perangkat tersebut terhubung ke jaringan layanan.
+                </p>
+
+                <p>
+                    <b>3. Resource Pooling</b>
+                    <br>
+                    Penyedia layanan menyatukan berbagai sumber daya komputasi guna melayani banyak konsumen sekaligus melalui model multi penyewa. Sumber daya fisik dan virtual dialokasikan secara dinamis sesuai permintaan pasar. 
+                    Dalam hal ini, pelanggan umumnya tidak perlu mengetahui lokasi pasti dari infrastruktur yang digunakan, meskipun dalam batasan tertentu mereka dapat menentukan wilayah makro seperti negara atau pusat data tertentu. 
+                    Sumber daya yang digabungkan ini mencakup kapasitas penyimpanan, pemrosesan, memori, bandwidth, hingga mesin virtual yang harus dibagi secara efisien, terpusat, dan proporsional untuk mengantisipasi padatnya beban pengguna.
+                </p>
+                
+                <p>
+                    <b>4. Rapid Elasticity</b>
+                    <br>
+                    Karakteristik ini memungkinkan sumber daya komputasi untuk ditingkatkan atau dikurangi dengan cepat dan elastis sesuai kebutuhan dinamis pengguna. Sistem wajib selalu siap mengakomodasi perubahan kapasitas layanan tersebut kapan saja tanpa kendala berarti.
+                </p>
+
+                <p>
+                    <b>4. Measured Service</b>
+                    <br>
+                    Sistem komputasi awan dibekali kemampuan pengukuran otomatis untuk mengawasi, mengontrol, dan mengoptimalkan penggunaan sumber daya pada berbagai tingkatan seperti besarnya media penyimpanan, prosesor, bandwidth jaringan, hingga aktivitas pengguna aktif. 
+                    Seluruh aktivitas pemakaian ini dipantau dan dilaporkan secara transparan, yang kemudian menjadi landasan objektif bagi penyedia dalam menetapkan biaya penggunaan layanan bagi konsumen.    
+                </p>
+
+            </article>
+
+            <!-- MATERI 3 -->
+            <article class="materi-card" id="3">
+
+                <h2>3. Jenis Layanan</h2>
+
+                <p>
+                    <b>1. Infrastructure as a Service (IaaS)</b>
+                    <br>
+                    Model ini memberikan kebebasan penuh kepada arsitek infrastruktur atau pengguna untuk mengelola sumber daya pemrosesan, penyimpanan, jaringan, serta menjalankan perangkat lunak apapun termasuk sistem operasi dan aplikasi tanpa harus repot memelihara perangkat keras fisik pusat data. 
+                    Dalam hal ini, infrastruktur dasar sepenuhnya dikelola oleh penyedia layanan, sementara pengguna bertanggung jawab atas aplikasi yang berjalan di atasnya dan dapat mengakses layanan melalui web browser, antarmuka baris perintah (CLI), atau API. Beberapa contoh penyedia IaaS yang populer 
+                    di antaranya adalah Amazon Web Services (AWS), Google Compute Engine, OpenStack, dan Eucalyptus.
+                </p>
+                
+                <p>
+                    <b>2. Platform as Service (PaaS)</b>
+                    <br>
+                    Model ini menyediakan platform pengembangan terpadu bagi para pengembang untuk membangun, menguji, dan menyebarkan aplikasi menggunakan bahasa pemrograman serta peralatan yang didukung oleh penyedia layanan. Pengembang dibebaskan dari pengelolaan infrastruktur maupun platform dasar, 
+                    namun tetap memiliki kendali penuh atas konfigurasi dan aplikasi yang mereka terapkan. Layanan ini biasanya diakses melalui internet menggunakan web browser, antarmuka pengguna web, antarmuka baris perintah, atau lingkungan pengembangan terintegrasi (IDE). Beberapa contoh penyedia PaaS 
+                    terkemuka meliputi Google App Engine, Red Hat OpenShift, Heroku, dan Salesforce Platform (Force.com).
+                </p>
+                
+                <p>
+                    <b>3. Software as a Service (SaaS)</b>
+                    <br>
+                    Model ini memberikan kemudahan bagi pengguna akhir untuk langsung memanfaatkan dan mengoperasikan aplikasi siap pakai yang dihosting serta dikelola sepenuhnya oleh penyedia layanan melalui jaringan internet. Pengguna dibebaskan dari segala bentuk kerumitan pengelolaan infrastruktur, 
+                    platform, maupun aplikasi itu sendiri, dan cukup mengakses layanan menggunakan perangkat klien  atau web browser. Contoh penerapan dan penyedia SaaS yang sangat lumrah dijumpai sehari-hari meliputi Google Workspace (Google Apps), Microsoft Office 365, dan Salesforce.
+                </p>
+                
+            </article>
+
+            <!-- MATERI 4 -->
+            <article class="materi-card" id="4">
+
+                <h2>4. Penerapan Teknologi Komputasi Awan</h2>
+
+                <p>
+                    Penerapan teknologi komputasi awan telah merambah ke dalam berbagai aspek kehidupan sehari-hari maupun operasional bisnis modern, memberikan kemudahan akses tanpa ketergantungan pada perangkat keras lokal. Dalam ranah konsumsi publik, pemanfaatan cloud terlihat jelas pada layanan surel 
+                    seperti Gmail dan Outlook, platform dokumen kolaboratif seperti Google Docs, serta media penyimpanan cloud seperti Dropbox dan Google Drive yang memungkinkan pengelolaan data dari mana saja secara aman. Selain itu, teknologi ini juga menopang industri hiburan digital melalui layanan streaming musik seperti Spotify.
+                </p>
+
+                <p>
+                    Sementara itu, dalam lingkup korporat dan dunia industri, komputasi awan berfungsi sebagai fondasi utama untuk meningkatkan efisiensi operasional dan fleksibilitas kerja. Perusahaan dapat memanfaatkan penyimpanan awan dan fitur pencadangan otomatis untuk mengamankan data penting tanpa perlu berinvestasi pada server fisik yang mahal. 
+                    Layanan ini juga memfasilitasi penggunaan aplikasi bisnis siap pakai (SaaS) seperti Microsoft 365 dan Salesforce, mempercepat siklus pengembangan dan pengujian perangkat lunak melalui infrastruktur PaaS, serta menyediakan daya komputasi masif berbasis IaaS yang memungkinkan organisasi dari berbagai skala untuk mengolah big data dan menjalankan model kecerdasan buatan (AI) secara optimal.
+                </p>
+
+            </article>
+
+            <!-- MATERI 5 -->
+            <article class="materi-card" id="5">
+
+                <h2>5. Keuntungan Penggunaan Cloud Computing</h2>
+
+                <p>
+                    <b>1. Agility & Flexibility</b>
+                    <br>
+                    Cloud memberikan akses instan ke berbagai teknologi canggih mulai dari infrastruktur dasar hingga kecerdasan buatan sehingga inovasi dan pengembangan dapat direalisasikan dalam hitungan menit. 
+                    Pengguna memiliki kebebasan penuh untuk menentukan kapasitas penyimpanan, daya proses, hingga memperbarui perangkat lunak secara real-time sesuai kebutuhan operasional.
+                </p>
+
+                <p>
+                    <b>2. Scalability & Elasticity</b>
+                    <br>
+                    Organisasi dapat menyesuaikan kapasitas sumber daya secara dinamis tanpa harus melakukan over-provisioning di awal. Kapasitas dapat dinaikkan atau diturunkan seketika 
+                    mengikuti fluktuasi bisnis, memungkinkan skala operasional berkembang dari kecil ke besar secara cepat dan efisien.
+                </p>
+
+                <p>
+                    <b>3. Efisiensi Biaya</b>
+                    <br>
+                    Komputasi awan mengubah pengeluaran modal tetap untuk pembelian perangkat keras fisik menjadi biaya variabel yang dibayar hanya sesuai pemakaian. Berkat skala ekonomi penyedia layanan, 
+                    biaya operasional ini terbukti jauh lebih hemat dibandingkan membangun infrastruktur secara mandiri.
+                </p>
+
+                <p>
+                    <b>4. Global Deployment & Portability</b>
+                    <br>
+                    Infrastruktur cloud memungkinkan aplikasi disebarkan ke berbagai wilayah geografis di seluruh dunia hanya dalam hitungan klik. Hal ini tidak hanya memangkas latensi untuk meningkatkan 
+                    pengalaman pengguna akhir, tetapi juga memastikan portabilitas tinggi, di mana organisasi dapat menjalankan sistemnya dari mana saja melalui perangkat guna mendukung integrasi bisnis secara global.
+                </p>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Koesuma</h3>
+        <p>© 2026 - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
